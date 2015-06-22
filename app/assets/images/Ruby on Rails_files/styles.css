@@ -1,0 +1,119 @@
+ /* TYPOGRAPHY */
+body                                                {font-family: Georgia, serif}
+header                                              {font-family: "expressway", sans-serif}
+code                                                {font-family: Courier New, Courier, mono}
+#announce, .smaller p, footer, ul, ol               {font-family: Verdana, Lucida Grande, Arial, Helvetica, sans-serif}
+h1                                                  {font-size: 38px}
+h2                                                  {font-size: 28px}
+h3                                                  {font-size: 22px}
+h4                                                  {font-size: 21px}
+.small h2                                           {font-size: 20px}
+h5, p, blockquote                                   {font-size: 18px}
+code, pre code, .small blockquote                   {font-size: 16px}
+.small p, cite                                      {font-size: 14px}
+.footnote                                           {font-size: 12px}
+nav, footer p, #announce                            {font-size: 11px}
+.smaller p                                          {font-size: 10px}
+@media (max-width: 767px) {h1                       {font-size: 31px}}
+@media (max-width: 767px) {h4                       {font-size: 18px}}
+h1, h5, code, nav                                   {font-weight: bold}
+h2, h3                                              {font-weight: normal}
+h1                                                  {line-height: 30px}
+h4, h3                                              {line-height: 24px}
+body, footer p                                      {line-height: 18px}
+h5, p, blockquote                                   {line-height: 140%}
+h2                                                  {line-height: 120%}
+.col-sm-4                                           {text-align: right}
+footer, blockquote, #menu                           {text-align: center}
+@media (max-width:767px) {h2, h5, .col-sm-4         {text-align: center}}
+a                                                   {text-decoration: underline}
+a:focus, a:hover                                    {text-decoration: none}
+
+/* BACKGROUNDS */
+body                                                {background-image: url(images/topbluefade.gif); background-repeat: repeat-x}
+.slivers                                            {background-image: url(images/herobackground.gif)}
+@media (min-width: 768px) {header.container         {background-image: url(images/rails.png); background-repeat: no-repeat; background-position: 22px 0px}}
+
+/* COLORS */
+a                                                   {color: #369}
+a:hover, a:focus                                    {background-color: #f4dda6}
+mark                                                {background-color: #ffc}
+footer                                              {color: #666}
+#menu a, code, pre, footer a                        {color: #000}
+#menu a:focus, #menu a:hover                        {color: #fff; background-color: #333}
+.navbar-default, code, pre                          {background-color: transparent}
+.navbar                                             {border-color: transparent}
+h4                                                  {color: #999}
+.framed img, .col-sm-4 img                          {background-color: #fff; border-color: #ccc}
+h5                                                  {color: #900}
+cite                                                {color: #a69e8a}
+#announce                                           {background-color: #981a21}
+#announce a, .inverted a:hover, .inverted a:focus   {color: #fff}
+.slivers                                            {border-top-color: #f6e69f; border-bottom-color: #f6e69f}
+.slivers a                                          {color: #000}
+.inverted a:hover, .inverted a:focus                {background-color: #000}
+#slideshow cite, #slideshow a                       {color: #464242}
+
+/* BORDERS */
+#menu.in                                            {border-bottom-style: solid}
+#menu:not(.in) li:not(:last-child)                  {border-right-style: solid}
+.framed img, .col-sm-4 img                          {border-style: solid}
+.slivers                                            {border-top-style: solid; border-bottom-style: solid}
+
+/* LAYOUTS */
+cite                                                {display: block}
+@media (min-width: 768px) {.navbar .navbar-nav      {display: inline-block; float: none}}
+@media (min-width: 768px) {.navbar-brand            {display: none}}
+
+/* WIDTHS */
+img.screencast                                      {width: 198px}
+img.biopic                                          {width: 158px; margin-right: 12px}
+@media (min-width:992px)  {.container               {width: 750px}}
+@media (min-width:992px)  {.slivers .container      {width: 792px}}
+#menu:not(.in) li                                   {padding-left: 5px; padding-right: 5px}
+#menu:not(.in) li:not(:last-child)                  {border-right-width: 1px}
+#menu a , mark, code, pre                           {padding-left: 0; padding-right: 0}
+@media (min-width: 768px) {header.container         {padding-left: 115px}}
+h2, .col-sm-8 p, h5, ul, ol                         {margin-right: 10px}
+pre                                                 {border-left: 0; border-right: 0; margin-left: 35px}
+@media (max-width: 767px) {pre                      {margin-left: 10px}}
+.framed img                                         {padding-left: 1px; padding-right: 1px; border-left-width: 1px; border-right-width: 1px}
+.col-sm-4 img                                       {padding-left: 2px; padding-right: 2px; border-left-width: 2px; border-right-width: 2px}
+.col-sm-4 a                                         {margin-right: 2px}
+.col-sm-8 .framed, .col-sm-8 p, h5, ul, ol          {margin-left: 10px}
+.col-sm-6 .framed                                   {margin-left: 0px}
+.col-sm-6 .framed img                               {margin-bottom: 4px}
+blockquote                                          {border-left-width: 0}
+
+/* HEIGHTS */
+img.screencast                                      {height: 158px}
+img.biopic                                          {height: 180px; margin-bottom: 10px}
+.navbar-brand img                                   {height: 34px}
+#menu li                                            {margin-top: 10px; margin-bottom: 13px}
+#menu a, mark, pre, blockquote                      {padding-top: 0; padding-bottom: 0}
+.navbar-brand                                       {padding-top: 8px}
+#menu.in                                            {border-bottom-width: 1px}
+header                                              {margin-top: 27px; margin-bottom: 32px}
+h1, h2, h5                                          {margin-top: 0}
+h2, article                                         {margin-bottom: 20px}
+.col-sm-8 p                                         {margin-bottom: 25px}
+h1                                                  {margin-bottom: 12px}
+h4, h5, #announce                                   {margin-bottom: 0px}
+pre                                                 {border-top: 0; border-bottom: 0}
+pre, blockquote                                     {margin-bottom: 25px}
+footer                                              {padding-bottom: 44px}
+footer p                                            {margin-bottom: 12px; margin-top: 12px}
+#sponsored_by                                       {margin-bottom: 17px; margin-top: 17px}
+#sponsored_by img                                   {vertical-align: -7px}
+.framed img                                         {padding-top: 1px; padding-bottom: 1px; border-top-width: 1px; border-bottom-width: 1px}
+.col-sm-4 img                                       {padding-top: 2px; padding-bottom: 2px}
+.col-sm-4 img, .slivers                             {border-top-width: 2px; border-bottom-width: 2px}
+ul, ol                                              {margin-bottom: 14px}
+cite                                                {margin-top: 2px}
+#announce                                           {padding-top: 4px; padding-bottom: 4px}
+h3                                                  {margin-top: 10px}
+.slivers p                                          {margin-top: 8px; margin-bottom: 27px}
+.slivers                                            {margin-bottom: 16px}
+#slideshow blockquote                               {height: 87px}
+@media (max-width: 767px) {#slideshow blockquote    {height: 200px}}
+#slideshow                                          {margin-bottom: 21px}
