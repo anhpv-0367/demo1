@@ -1,0 +1,1 @@
+$("#micropost-<%= @micropost.id %>").html("<%= escape_javascript(render("microposts/micropost", micropost: @micropost)) %>");
